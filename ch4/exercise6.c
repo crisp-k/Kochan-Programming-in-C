@@ -1,0 +1,23 @@
+// Same as prog3, except uses left justification
+
+// Program to generate a table of triangular numbers
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n, triangularNumber;
+
+    printf("TABLE OF TRAINGULAR NUMBERS\n\n");
+    printf(" n   Sum from 1 to n\n");
+    printf("---  ---------------\n");
+
+    triangularNumber = 0;
+
+    for(n = 1; n <= 10; ++n) {
+        triangularNumber += n;
+        printf(" %-2i           %6i\n", n, triangularNumber);
+    }
+
+    return 0;
+}
